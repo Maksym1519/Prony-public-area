@@ -1,0 +1,44 @@
+.roadmap__wrapper {
+    width: 100%;
+    height: auto;
+}
+.roadmap__title {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-600';
+    font-size: 24px;
+    line-height: 38.8px; 
+    margin-bottom: 20px;
+}
+.roadmap__blocks__body {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 24px;
+}
+.roadmap__block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 20px 32px 20px;
+    row-gap: 21px;
+}
+.roadmap__block__item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 28px;
+}
+.roadmap__block__item__like {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.roadmap__block__item__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
