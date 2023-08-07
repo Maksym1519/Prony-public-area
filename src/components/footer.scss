@@ -1,0 +1,131 @@
+.footer {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__upper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #272557;
+        height: 232px;
+    }
+
+    &__wrapper-upper {
+        width: 100%;
+        max-width: 1128px;
+        display: flex;
+        flex-direction: row;
+        gap: 145px;
+    }
+
+    &__logo {
+        margin: 25px 0 0 0;
+        width: 205px;
+        height: 45px;
+    }
+
+    &__lists {
+        margin: 46px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &.first {
+            max-width: 178px;
+        }
+
+        &.second {
+            max-width: 188px;
+        }
+
+        &.third {
+            max-width: 201px;
+        }
+
+        &.fourth {
+            max-width: fit-content;
+        }
+    }
+
+    &__heading {
+        color: var(--style, #F43658);
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+    }
+
+    &__rows {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__row {
+        color: #FFF;
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Body2 dedisse scrips */
+        font-family: Nunito-400;
+        font-size: 12px;
+        line-height: 17px;
+        /* 141.667% */
+        letter-spacing: 0.6px;
+    }
+
+    &__lower {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #322F71;
+        height: 38px;
+    }
+
+    &__wrapper-lower {
+        width: 100%;
+        max-width: 1128px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0 0 0;
+    }
+
+    &__ct-text {
+
+        color: #FFF;
+        font-family: Poppins-400;
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    &__lower-links {
+        display: flex;
+        flex-direction: row;
+        gap: 56px;
+    }
+
+    &__socials {
+        margin: 1px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+    }
+
+    &__social {
+        width: 16px;
+        height: 16px;
+    }
+}

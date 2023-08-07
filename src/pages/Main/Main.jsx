@@ -8,6 +8,7 @@ import { register } from "swiper/element/bundle";
 const HeaderLazy = React.lazy(() => import('../../components/Header'));
 const FeedbackLazy = React.lazy(() => import('./Feedback'));
 const RoadmapLazy = React.lazy(() => import('./Roadmap'));
+const FooterLazy = React.lazy(() => import('../../components/Footer'));
 
 function LoadingInfo() {
   return <h2>Loading...</h2>;
@@ -25,7 +26,11 @@ const Main = () => {
     <Suspense fallback={<LoadingInfo />}>
         <RoadmapLazy />
       </Suspense>
+   
       </div>
+      <Suspense fallback={<LoadingInfo />}>
+        <FooterLazy />
+      </Suspense>
   </div>
 
  )

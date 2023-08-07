@@ -42,3 +42,15 @@
     flex-direction: column;
     row-gap: 5px;
 }
+.block__item__like__amount {
+    color: var(--aebdda, #7791C2);
+    text-align: center;
+    font-family: 'Poppins-400';
+    font-size: 14px;
+}
+.block__item__info__text {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-500';
+    font-size: 14px;
+    line-height: 128.5%; 
+}

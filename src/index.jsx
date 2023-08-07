@@ -3,6 +3,7 @@
   import { BrowserRouter, HashRouter } from 'react-router-dom';
   import App from "./App";
   import "./style.scss";
+  import "./components/footer.scss"
 
   ReactDOM.render(
     <HashRouter>
