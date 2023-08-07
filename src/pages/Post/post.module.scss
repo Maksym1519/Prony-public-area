@@ -1,0 +1,127 @@
+.post__wrapper {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.post__container {
+    width: 58.75%;
+    height: auto;
+    margin: 34px auto 0;
+}
+.vouters__wrapper {
+    width: 100%;
+    height: 64px;
+    border-radius: 10px;
+    background: var(--f-8-faff, #F8FAFF);
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+.vouters__body {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+.vouters__body__title {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-400';
+    font-size: 12px;
+    line-height: 21px; 
+    letter-spacing: 0.079px;
+}
+.vouters__body__amount {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-400';
+    font-size: 14px;
+    line-height: 128.5%; 
+    margin-left: 5px;
+}
+.vouters__body__imgWrapper {
+    max-width: 136px;
+    display: flex;
+    align-items: center;
+}
+// .vouters__body__img {
+//     width: 30px;
+//     height: 30px;
+// }
+.vouters__body__img2 {
+   transform: translateX(-40%);
+  }
+.vouters__body__img3 {
+   transform: translateX(-80%);
+  }
+.vouters__body__img4 {
+   transform: translateX(-120%);
+  }
+.vouters__body__img5 {
+   transform: translateX(-160%);
+  }
+.vouters__body__img6 {
+   transform: translateX(-200%);
+  }
+//-----------------------------------------------------
+.vouterCard__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.vouterCard__header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 11.5px;
+}
+.vouterCard__header__like {
+    display: flex;
+    flex-direction: column;
+    margin-right: 23px;
+}
+.header__like__amount {
+    color: var(--aebdda, #7791C2);
+    text-align: center;
+    font-family: 'Poppins-400';
+    font-size: 18px;
+    line-height: normal;
+}
+.vouterCard__header__avatar {
+    margin-right: 16px;
+}
+.vouterCard__header__name {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-500';
+    font-size: 18px;
+    line-height: 20.4px; 
+    letter-spacing: 0.06px;
+    margin-right: 13px;
+}
+.vouterCard__header__seen {
+    color: var(--aebdda, #7791C2);
+    font-family: 'Poppins-400';
+    font-size: 12px;
+    line-height: 21px; 
+    letter-spacing: 0.079px;
+}
+.vouterCard__textInfo {
+    margin-bottom: 15px;
+}
+.vouterCard__textInfo__title {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-500';
+    font-size: 24px;
+    line-height: 128.5%; 
+    margin-bottom: 21px;
+}
+.vouterCard__textInfo__text {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-400';
+    font-size: 14px;
+    line-height: 128.5%; 
+}

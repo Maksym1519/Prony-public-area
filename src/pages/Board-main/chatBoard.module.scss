@@ -1,0 +1,105 @@
+.chatBoard__item {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 17px 1fr 32px;
+    column-gap: 24px;
+}
+.chatBoard__item__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 23px;
+}
+.chatBoard__item__like, .chatBoard__item__info {
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+row-gap: 5px;
+}
+.chatBoard__item__messages {
+display: flex;
+column-gap: 5px;
+max-height: 16px;
+align-items: center;
+margin-top: 3px;
+}
+.item__like__img {
+    display: block;
+    max-width: 14px;
+    max-height: 14px;
+}
+.item__info__title {
+color: var(--272557, #272557);
+font-family: 'Poppins-500';
+font-size: 16px;
+line-height: 128.5%; 
+}
+.item__like__numbers {
+    color: var(--aebdda, #7791C2);
+    font-family: 'Poppins-400';
+    font-size: 14px;
+}
+.item__info__status {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.info__status__statusText {
+color: var(--aebdda, #7791C2);
+font-family: 'Poppins-400';
+font-size: 11px;
+line-height: 16.227px; 
+letter-spacing: 0.061px;
+}
+.info__status__text {
+color: var(--272557, #272557);
+font-family: 'Poppins-400';
+font-size: 12px;
+line-height: 128.5%; 
+}
+.item__messages__numbers {
+color: var(--colors-2-secondary, #1565C0);
+font-family: 'Poppins-400';
+font-size: 12px;
+line-height: 16px; 
+letter-spacing: 0.079px;
+}
+.chatBoard__pagination {
+    width: auto;
+    //max-width: 246px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    column-gap: 21px;
+    margin-top: 42px;
+    margin-bottom: 69px;
+}
+.pagination__button {
+    
+    display: block;
+    background-color: #FFF;
+    color: #272557;
+    font-family: 'Poppins-400';
+    font-size: 12px;
+    line-height: 14.881px; 
+    letter-spacing: 6.608px;
+    position: relative;
+}
+.pagination__button:hover {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #7791C2;
+    color: #fff;
+}
+.pagination__number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -40%);
+}

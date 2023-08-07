@@ -9,6 +9,7 @@ import ArrowDown from "../../images/Arrow-down.svg";
 import ArrowTop from "../../images/Arrow-Top.svg";
 const HeaderLazy = React.lazy(() => import("../../components/Header"));
 const ChatBoardLazy = React.lazy(() => import("./ChatBoard"));
+const FooterLazy = React.lazy(() => import("../../components/Footer"));
 import { FiltersData2 } from "./FiltersData";
 import { FiltersData1 } from "./FiltersData";
 
@@ -45,12 +46,12 @@ const BoardMain = () => {
     cursor: pointer;
     padding: 12px;
     h1 {
-        color: var(--272557, #272557);
-        font-family: 'Poppins-400';
-        font-size: 12px;
-        line-height: 21px; 
-        letter-spacing: 0.079px;
-       // margin-bottom: 10px
+      color: var(--272557, #272557);
+      font-family: "Poppins-400";
+      font-size: 12px;
+      line-height: 21px;
+      letter-spacing: 0.079px;
+      // margin-bottom: 10px
     }
 
     span {
@@ -65,14 +66,14 @@ const BoardMain = () => {
     justify-content: center;
     align-items: flex-start;
     padding-left: 12px;
-     p {
-      color: var(--secondary-text, #606276);
-      font-family: "Gilroy-400";
-      font-size: 16px;
-      line-height: 180%;
-      letter-spacing: 0.32px;
-      margin-bottom: 10px
-      }
+    p {
+        color: var(--272557, #272557);
+        font-family: 'Poppins-400';
+        font-size: 12px;
+        line-height: 21px; 
+        letter-spacing: 0.079px;
+        margin-bottom: 10px;
+    }
   `;
 
   const [clicked, setClicked] = useState(false);
@@ -122,11 +123,15 @@ const BoardMain = () => {
 
     setClicked4(index);
   };
+  //--------------------------------------------------------
+  const colored = {
+    color: '#1565C0'
+  }
   return (
     <>
       <div className={b.boardMain__wrapper}>
         <Suspense fallback={<LoadingInfo />}>
-          <HeaderLazy />
+          <HeaderLazy text={"Board title 1"} color={colored}/>
         </Suspense>
         <div className={b.boardMain__container}>
           <div className={b.boardMain__main}>
@@ -148,152 +153,190 @@ const BoardMain = () => {
                   <h4 className={b.filters__item__title}>Sort by:</h4>
                   <AccordionSection>
                     <Container>
-                    {FiltersData1.map((item1, index) => {
-                return (
-                  <>
-                  {/* <div className={b.line__wrapper}> */}
-                       <Wrap onClick={() => toggle1(index)} key={index}>
-                        <h1 className={b.dropdown__title}>{item1.title}</h1>
-                        <span className={b.arrow__wrapper}>
-                          {clicked1 === index ? (
-                            <img src={ArrowTop} alt="arrow" />
-                          ) : (
-                            <img
-                              src={ArrowDown}
-                              alt="arrow"
-                              className={b.terms__arrow}
-                            />
-                          )}
-                        </span>
-                      </Wrap>
-                      {clicked1 === index ? (
-                        <Dropdown>
-                          <p className={b.dropdown__text}>{item1.content}</p>
-                          <p className={b.dropdown__text}>{item1.content}</p>
-                          <p className={b.dropdown__text}>{item1.content}</p>
-                        </Dropdown>
-                      ) : null}
-                      {/* </div> */}
-                    </>
-                );
-              })}
+                      {FiltersData1.map((item1, index) => {
+                        return (
+                          <>
+                            {/* <div className={b.line__wrapper}> */}
+                            <Wrap onClick={() => toggle1(index)} key={index}>
+                              <h1 className={b.dropdown__title}>
+                                {item1.title}
+                              </h1>
+                              <span className={b.arrow__wrapper}>
+                                {clicked1 === index ? (
+                                  <img src={ArrowTop} alt="arrow" />
+                                ) : (
+                                  <img
+                                    src={ArrowDown}
+                                    alt="arrow"
+                                    className={b.terms__arrow}
+                                  />
+                                )}
+                              </span>
+                            </Wrap>
+                            {clicked1 === index ? (
+                              <Dropdown>
+                                <p className={b.dropdown__text}>
+                                  {item1.content}
+                                </p>
+                                <p className={b.dropdown__text}>
+                                  {item1.content}
+                                </p>
+                                <p className={b.dropdown__text}>
+                                  {item1.content}
+                                </p>
+                              </Dropdown>
+                            ) : null}
+                            {/* </div> */}
+                          </>
+                        );
+                      })}
                     </Container>
-                </AccordionSection>
+                  </AccordionSection>
                 </div>
                 <div className={b.main__filters__left__item}>
-                <h4 className={b.filters__item__title}>Showing:</h4>
-                <AccordionSection>
+                  <h4 className={b.filters__item__title}>Showing:</h4>
+                  <AccordionSection>
                     <Container>
-                    {FiltersData2.map((item, index) => {
-                return (
-                  <>
-                  {/* <div className={b.line__wrapper}> */}
-                       <Wrap onClick={() => toggle2(index)} key={index}>
-                        <h1 className={b.dropdown__title}>{item.title}</h1>
-                        <span className={b.arrow__wrapper}>
-                          {clicked2 === index ? (
-                            <img src={ArrowTop} alt="arrow" />
-                          ) : (
-                            <img
-                              src={ArrowDown}
-                              alt="arrow"
-                              className={b.terms__arrow}
-                            />
-                          )}
-                        </span>
-                      </Wrap>
-                      {clicked2 === index ? (
-                        <Dropdown>
-                          <p className={b.dropdown__text}>{item.content}</p>
-                          <p className={b.dropdown__text}>{item.content}</p>
-                          <p className={b.dropdown__text}>{item.content}</p>
-                        </Dropdown>
-                      ) : null}
-                      {/* </div> */}
-                    </>
-                );
-              })}
+                      {FiltersData2.map((item, index) => {
+                        return (
+                          <>
+                            {/* <div className={b.line__wrapper}> */}
+                            <Wrap onClick={() => toggle2(index)} key={index}>
+                              <h1 className={b.dropdown__title}>
+                                {item.title}
+                              </h1>
+                              <span className={b.arrow__wrapper}>
+                                {clicked2 === index ? (
+                                  <img src={ArrowTop} alt="arrow" />
+                                ) : (
+                                  <img
+                                    src={ArrowDown}
+                                    alt="arrow"
+                                    className={b.terms__arrow}
+                                  />
+                                )}
+                              </span>
+                            </Wrap>
+                            {clicked2 === index ? (
+                              <Dropdown>
+                                <p className={b.dropdown__text}>
+                                  {item.content}
+                                </p>
+                                <p className={b.dropdown__text}>
+                                  {item.content}
+                                </p>
+                                <p className={b.dropdown__text}>
+                                  {item.content}
+                                </p>
+                              </Dropdown>
+                            ) : null}
+                            {/* </div> */}
+                          </>
+                        );
+                      })}
                     </Container>
-                </AccordionSection>
+                  </AccordionSection>
                 </div>
               </div>
               <div className={b.main__filters__right}>
                 <div className={b.main__filters__right__item}>
-                <h4 className={b.filters__item__title}>Showing:</h4>
-                <AccordionSection>
+                  <h4 className={b.filters__item__title}>Showing:</h4>
+                  <AccordionSection>
                     <Container>
-                    {FiltersData1.map((item, index) => {
-                return (
-                  <>
-                  {/* <div className={b.line__wrapper}> */}
-                       <Wrap onClick={() => toggle3(index)} key={index}>
-                        <h1 className={b.dropdown__title}>{item.title}</h1>
-                        <span className={b.arrow__wrapper}>
-                          {clicked3 === index ? (
-                            <img src={ArrowTop} alt="arrow" />
-                          ) : (
-                            <img
-                              src={ArrowDown}
-                              alt="arrow"
-                              className={b.terms__arrow}
-                            />
-                          )}
-                        </span>
-                      </Wrap>
-                      {clicked3 === index ? (
-                        <Dropdown>
-                          <p className={b.dropdown__text}>{item.content}</p>
-                          <p className={b.dropdown__text}>{item.content}</p>
-                          <p className={b.dropdown__text}>{item.content}</p>
-                        </Dropdown>
-                      ) : null}
-                      {/* </div> */}
-                    </>
-                );
-              })}
+                      {FiltersData1.map((item, index) => {
+                        return (
+                          <>
+                            {/* <div className={b.line__wrapper}> */}
+                            <Wrap onClick={() => toggle3(index)} key={index}>
+                              <h1 className={b.dropdown__title}>
+                                {item.title}
+                              </h1>
+                              <span className={b.arrow__wrapper}>
+                                {clicked3 === index ? (
+                                  <img src={ArrowTop} alt="arrow" />
+                                ) : (
+                                  <img
+                                    src={ArrowDown}
+                                    alt="arrow"
+                                    className={b.terms__arrow}
+                                  />
+                                )}
+                              </span>
+                            </Wrap>
+                            {clicked3 === index ? (
+                              <Dropdown>
+                                <p className={b.dropdown__text}>
+                                  {item.content}
+                                </p>
+                                <p className={b.dropdown__text}>
+                                  {item.content}
+                                </p>
+                                <p className={b.dropdown__text}>
+                                  {item.content}
+                                </p>
+                              </Dropdown>
+                            ) : null}
+                            {/* </div> */}
+                          </>
+                        );
+                      })}
                     </Container>
-                </AccordionSection>
+                  </AccordionSection>
                 </div>
                 <div className={b.main__filters__right__item}>
-                <h4 className={b.filters__item__title}>Showing:</h4>
-                <AccordionSection>
+                  <h4 className={b.filters__item__title}>Showing:</h4>
+                  <AccordionSection>
                     <Container>
-                    {FiltersData1.map((item, index) => {
-                return (
-                  <>
-                  {/* <div className={b.line__wrapper}> */}
-                       <Wrap onClick={() => toggle4(index)} key={index}>
-                        <h1 className={b.dropdown__title}>{item.title}</h1>
-                        <span className={b.arrow__wrapper}>
-                          {clicked4 === index ? (
-                            <img src={ArrowTop} alt="arrow" />
-                          ) : (
-                            <img
-                              src={ArrowDown}
-                              alt="arrow"
-                              className={b.terms__arrow}
-                            />
-                          )}
-                        </span>
-                      </Wrap>
-                      {clicked4 === index ? (
-                        <Dropdown>
-                          <p className={b.dropdown__text}>{item.content}</p>
-                          <p className={b.dropdown__text}>{item.content}</p>
-                          <p className={b.dropdown__text}>{item.content}</p>
-                        </Dropdown>
-                      ) : null}
-                      {/* </div> */}
-                    </>
-                );
-              })}
+                      {FiltersData1.map((item, index) => {
+                        return (
+                          <>
+                            {/* <div className={b.line__wrapper}> */}
+                            <Wrap onClick={() => toggle4(index)} key={index}>
+                              <h1 className={b.dropdown__title}>
+                                {item.title}
+                              </h1>
+                              <span className={b.arrow__wrapper}>
+                                {clicked4 === index ? (
+                                  <img src={ArrowTop} alt="arrow" />
+                                ) : (
+                                  <img
+                                    src={ArrowDown}
+                                    alt="arrow"
+                                    className={b.terms__arrow}
+                                  />
+                                )}
+                              </span>
+                            </Wrap>
+                            {clicked4 === index ? (
+                              <Dropdown>
+                                <p className={b.dropdown__text}>
+                                  {item.content}
+                                </p>
+                                <p className={b.dropdown__text}>
+                                  {item.content}
+                                </p>
+                                <p className={b.dropdown__text}>
+                                  {item.content}
+                                </p>
+                              </Dropdown>
+                            ) : null}
+                            {/* </div> */}
+                          </>
+                        );
+                      })}
                     </Container>
-                </AccordionSection>
+                  </AccordionSection>
                 </div>
               </div>
             </div>
-          </div>
+            <Suspense fallback={<LoadingInfo />}>
+              <ChatBoardLazy />
+            </Suspense>
+             </div>
         </div>
+        <Suspense fallback={<LoadingInfo />}>
+          <FooterLazy />
+        </Suspense>
       </div>
     </>
   );

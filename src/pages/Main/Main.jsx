@@ -14,10 +14,13 @@ function LoadingInfo() {
   return <h2>Loading...</h2>;
 }
 const Main = () => {
+  const colored = {
+    color: '#272557'
+  }
  return (
   <div className={m.main__wrapper}>
     <Suspense fallback={<LoadingInfo />}>
-        <HeaderLazy />
+        <HeaderLazy text={"Boards"} color={colored}/>
       </Suspense>
       <div className={m.main__container}>
     <Suspense fallback={<LoadingInfo />}>

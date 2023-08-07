@@ -6,7 +6,11 @@ import Icon1 from '../images/header-icon1.svg';
 import Icon2 from '../images/header-icon2.svg';
 import Icon3 from '../images/header-icon3.svg';
 
-const Header = () => {
+const Header = (props) => {
+  const { color } = props.color;
+  const textStyle = {
+    color: color || "var(--272557, #1565C0)"
+  }
     return (
         <>
         <div className={h.header__wrapper}>
@@ -19,7 +23,7 @@ const Header = () => {
             <div className={h.header__nav}>
               <div className={h.header__nav__item}>
                 <img src={Icon1} alt="icon" />
-                 <p className={h.header__nav__itemText}>Boards</p>
+                 <p className={h.header__nav__itemText} style={textStyle}>{props.text}</p>
               </div>
               <div className={h.header__nav__item}>
                 <img src={Icon2} alt="icon" />

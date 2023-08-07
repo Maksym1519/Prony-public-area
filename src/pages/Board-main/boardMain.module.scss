@@ -6,7 +6,7 @@
 .boardMain__container {
     width: 58.75%;
     height: auto;
-    margin: 0 auto;
+    margin: 38px auto 0;
 }
 .boardMain__main {
     width: 100%;
@@ -14,16 +14,18 @@
     display: grid;
     grid-template-columns: 360px 1fr;
     column-gap: 24px;
+    align-items: flex-start;
+    box-sizing: border-box;
 }
 .main__filters {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 162px 147px;
+    grid-template-columns: 162px 139px;
     grid-template-rows: auto auto;
     column-gap: 20.5px;
     row-gap: 12px;
-    padding: 15px 15px 25px 15px;
+    padding: 15px 23px 25px 15px;
     border-radius: 10px;
     background: #F8FAFF;
 }
