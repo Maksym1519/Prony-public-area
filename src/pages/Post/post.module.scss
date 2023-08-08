@@ -1,127 +1,299 @@
 .post__wrapper {
-    width: 100%;
-    height: 100%;
-    background: #fff;
+  width: 100%;
+  height: 100%;
+  background: #fff;
 }
 .post__container {
-    width: 58.75%;
-    height: auto;
-    margin: 34px auto 0;
+  width: 58.75%;
+  height: auto;
+  margin: 34px auto 0;
 }
 .vouters__wrapper {
-    width: 100%;
-    height: 64px;
-    border-radius: 10px;
-    background: var(--f-8-faff, #F8FAFF);
-    padding-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 25px;
+  width: 100%;
+  height: 64px;
+  border-radius: 10px;
+  background: var(--f-8-faff, #f8faff);
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 25px;
 }
 .vouters__body {
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-    column-gap: 13px;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
 }
 .vouters__body__title {
-    color: var(--272557, #272557);
-    font-family: 'Poppins-400';
-    font-size: 12px;
-    line-height: 21px; 
-    letter-spacing: 0.079px;
+  color: var(--272557, #272557);
+  font-family: "Poppins-400";
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0.079px;
 }
 .vouters__body__amount {
-    color: var(--272557, #272557);
-    font-family: 'Poppins-400';
-    font-size: 14px;
-    line-height: 128.5%; 
-    margin-left: 5px;
+  color: var(--272557, #272557);
+  font-family: "Poppins-400";
+  font-size: 14px;
+  line-height: 128.5%;
+  margin-left: 5px;
 }
 .vouters__body__imgWrapper {
-    max-width: 136px;
-    display: flex;
-    align-items: center;
+  max-width: 136px;
+  display: flex;
+  align-items: center;
 }
 // .vouters__body__img {
 //     width: 30px;
 //     height: 30px;
 // }
 .vouters__body__img2 {
-   transform: translateX(-40%);
-  }
+  transform: translateX(-40%);
+}
 .vouters__body__img3 {
-   transform: translateX(-80%);
-  }
+  transform: translateX(-80%);
+}
 .vouters__body__img4 {
-   transform: translateX(-120%);
-  }
+  transform: translateX(-120%);
+}
 .vouters__body__img5 {
-   transform: translateX(-160%);
-  }
+  transform: translateX(-160%);
+}
 .vouters__body__img6 {
-   transform: translateX(-200%);
-  }
+  transform: translateX(-200%);
+}
 //-----------------------------------------------------
 .vouterCard__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.vouterCard__header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11.5px;
+}
+.vouterCard__header__like {
+  display: flex;
+  flex-direction: column;
+  margin-right: 23px;
+}
+.header__like__amount {
+  color: var(--aebdda, #7791c2);
+  text-align: center;
+  font-family: "Poppins-400";
+  font-size: 18px;
+  line-height: normal;
+}
+.vouterCard__header__avatar {
+  margin-right: 16px;
+}
+.vouterCard__header__name {
+  color: var(--272557, #272557);
+  font-family: "Poppins-500";
+  font-size: 18px;
+  line-height: 20.4px;
+  letter-spacing: 0.06px;
+  margin-right: 13px;
+}
+.vouterCard__header__seen {
+  color: var(--aebdda, #7791c2);
+  font-family: "Poppins-400";
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0.079px;
+}
+.vouterCard__textInfo {
+  margin-bottom: 25px;
+}
+.vouterCard__textInfo__title {
+  color: var(--272557, #272557);
+  font-family: "Poppins-500";
+  font-size: 24px;
+  line-height: 128.5%;
+  margin-bottom: 12px;
+}
+.vouterCard__textInfo__text {
+  color: var(--272557, #272557);
+  font-family: "Poppins-400";
+  font-size: 14px;
+  line-height: 128.5%;
+}
+.vouterCard__tagname {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 16px;
+  margin-bottom: 29px;
+}
+.vouterCard__tagname__imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tagname__functions {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.tagname__functions__status {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+}
+.functions__status__text {
+  color: var(--aebdda, #7791c2);
+  font-family: "Poppins-400";
+  font-size: 11px;
+  line-height: 16.227px;
+  letter-spacing: 0.061px;
+}
+.tagname__functions__comments {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.functions__comments__text {
+  color: var(--aebdda, #7791c2);
+  font-family: "Poppins-400";
+  font-size: 11px;
+  line-height: 16.227px;
+  letter-spacing: 0.061px;
+}
+.tagname__functions__button {
+  width: 88px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito-400";
+  font-size: 10px;
+  line-height: 21px;
+  letter-spacing: 0.079px;
+  &.red {
+    border-radius: 30px;
+    background: var(--red, #eb5757);
+  }
+  &.green {
+    border-radius: 30px;
+    background: var(--green-2, #27ae60);
+  }
+}
+.textForm__wrapper {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    row-gap: 37px;
+    margin-bottom: 43px;
 }
-.vouterCard__header {
+.textForm__textArea__wrapper {
+    width: 100%;
+    height: auto;
+    max-height: 96px;
+}
+.textForm__textArea {
+    min-width: 100%;
+    max-height: 96px;
+    border-radius: 5px;
+    border: 1px solid var(--e-5-ecf-9, #E5ECF9);
+    padding: 14px 0 0 20px;
+}
+.textForm__textArea::placeholder {
+    color: var(--cddaf-2, #CDDAF2);
+    font-family: 'Poppins-400';
+    font-size: 14px;
+    line-height: 21px; 
+    letter-spacing: 0.079px;
+}
+.textForm__functions {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
-    margin-bottom: 11.5px;
+    justify-content: space-between;
+    padding-left: 218px;
 }
-.vouterCard__header__like {
+.textForm__functions__addFilles {
     display: flex;
-    flex-direction: column;
-    margin-right: 23px;
+    align-items: center;
+    column-gap: 10px;
 }
-.header__like__amount {
-    color: var(--aebdda, #7791C2);
-    text-align: center;
-    font-family: 'Poppins-400';
-    font-size: 18px;
-    line-height: normal;
-}
-.vouterCard__header__avatar {
-    margin-right: 16px;
-}
-.vouterCard__header__name {
-    color: var(--272557, #272557);
-    font-family: 'Poppins-500';
-    font-size: 18px;
-    line-height: 20.4px; 
-    letter-spacing: 0.06px;
-    margin-right: 13px;
-}
-.vouterCard__header__seen {
-    color: var(--aebdda, #7791C2);
-    font-family: 'Poppins-400';
-    font-size: 12px;
-    line-height: 21px; 
-    letter-spacing: 0.079px;
-}
-.vouterCard__textInfo {
-    margin-bottom: 15px;
-}
-.vouterCard__textInfo__title {
-    color: var(--272557, #272557);
-    font-family: 'Poppins-500';
-    font-size: 24px;
-    line-height: 128.5%; 
-    margin-bottom: 21px;
-}
-.vouterCard__textInfo__text {
-    color: var(--272557, #272557);
+.functions__addFilles__text {
+    color: var(--cddaf-2, #CDDAF2);
     font-family: 'Poppins-400';
     font-size: 14px;
-    line-height: 128.5%; 
+    line-height: 21px;
+    letter-spacing: 0.079px;
+    &.blue {
+        color: #1565C0;
+    }
 }
+.textForm__functions__inputsWrapper {
+    display: flex;
+    align-items: center;
+}
+.textForm__input {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    &.margin {
+        margin-right: 19px;
+    }
+    & input {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+}
+.textForm__input__label {
+    color: #272557;
+    font-family: 'Poppins-400';
+    font-size: 14px;
+    line-height: 20.4px; 
+    letter-spacing: 0.06px;
+}
+.textForm__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 149px;
+    height: 41px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: var(--colors-2-secondary, #1565C0);
+    color: #FFF;
+    font-family: 'Nunito-600';
+    font-size: 14px;
+    line-height: 20.4px; 
+    letter-spacing: 0.06px;
+    }
+   .textForm__button__wrapper {
+    position: relative;
+    width: 149px;
+    height: 41px;
+    margin-left: 45px;
+   }
+   .button__blur {
+    width: 127px;
+    height: 37px;
+    position: absolute;
+    left: 11px;
+    bottom: -7px;
+    border-radius: 50px;
+    opacity: 0.7;
+    background: var(--colors-2-secondary, #1565C0);
+    filter: blur(16.5px);
+   }

@@ -1,0 +1,171 @@
+.postChat__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.postChat__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 3.5px;
+    border-bottom: 1px solid var(--e-5-ecf-9, #E5ECF9);
+}
+.postChat__header__text {
+    color: var(--272557, #272557);
+    font-family:'Poppins-400';
+    font-size: 14px;
+    line-height: 21px; 
+    letter-spacing: 0.079px;
+    &.color {
+        color: var(--aebdda, #7791C2);
+    }
+}
+.postChat__header__sorting {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.postChat__body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.postChat__body__item {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 16px 29px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 22px;
+    &.background {
+     background: var(--f-8-faff, #F8FAFF);
+    }
+    // &.display {
+    //  //display: none;
+    // }
+}
+.item__imgWrapper {
+   width: 50px;
+   height: 50px;
+}
+.item__info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.item__info__date {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 8px;
+}
+.info__date__likeWrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    & .numbers,.text {
+    color: var(--aebdda, #7791C2);
+    font-family: 'Poppins-400';
+    font-size: 14px;
+    line-height: 21px; 
+    letter-spacing: 0.079px;
+    }
+}
+.info__date__date {
+    color: var(--aebdda, #7791C2);
+    font-family: 'Poppins-400';
+    font-size: 14px;
+    line-height: 21px; 
+    letter-spacing: 0.079px;
+    margin-left: 13px;
+}
+.item__info__description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    & .title {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-500';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.4px; 
+    letter-spacing: 0.06px;
+    margin-bottom: 5px;
+    }
+    & .text {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-400';
+    font-size: 12px;
+    line-height: 17.5px; 
+    letter-spacing: 0.079px;
+    max-width: 95%;
+    }
+}
+.item__info__functions {
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
+}
+.info__functions__item {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    & .text {
+    color: var(--aebdda, #7791C2);
+    font-family: 'Poppins-400';
+    font-size: 12px;
+    line-height: 21px; 
+    letter-spacing: 0.079px;
+    }
+    & .textColor {
+    color: var(--colors-2-secondary, #1565C0);
+    }
+}
+.specialChat {
+    padding-left: 95px;
+}
+.lineConnector {
+    position: absolute;
+    background-color: #CDDAF2; // Цвет линии
+    width: 1px; // Ширина линии
+    min-height: 150px; // Высота линии (пока вертикальная)
+    left: 54px; // Горизонтально по центру блока
+    top: 65px;
+    transform: translateX(-50%); // Смещение на половину ширины линии
+    transition: height 0.5s ease; // Анимация роста линии
+    z-index: 999;
+    &.horizontal .lineConnector {
+        width: 100%; // Теперь горизонтальная линия
+        height: 1px;
+        top: 5%; // Вертикально по центру блока
+        left: 0;
+        transform: translateY(-50%); // Смещение на половину высоты линии
+      }
+  }
+  .lineHorizontalConnector {
+    position: absolute;
+    background-color: #CDDAF2; // Цвет линии
+    width: 40px; // Ширина линии
+    height: 1px; // Высота линии (пока вертикальная)
+    left: 53px; // Горизонтально по центру блока
+    top: 38px;
+    //transform: translateX(-50%); // Смещение на половину ширины линии
+    transition: height 0.5s ease; // Анимация роста линии
+    z-index: 999;
+    &.horizontal .lineConnector {
+        width: 100%; // Теперь горизонтальная линия
+        height: 1px;
+        top: 5%; // Вертикально по центру блока
+        left: 0;
+        transform: translateY(-50%); // Смещение на половину высоты линии
+      }
+  }
+
+  
