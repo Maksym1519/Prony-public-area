@@ -226,7 +226,58 @@ const PostChat = () => {
                </div>
             </div>
 }
-                 {/* //item------------------------------------------------- */}
+                 {/* //item6------------------------------------------------- */}
+                 <div className={p.postChat__body__item}>
+               <div className={p.item__imgWrapper}>
+                 <img src={Ava3} alt="ava" />
+               </div>
+               <div className={p.item__info}>
+                  <div className={p.item__info__date}>
+                    <img src={Like} alt="like" />
+                    <div className={p.info__date__likeWrapper}>
+                      <span className={p.numbers}>3</span>
+                      <span className={p.text}>likes</span>
+                    </div>
+                    <span className={p.info__date__date}>01-02-2020</span>
+                  </div>
+                  <div className={p.item__info__description}>
+                       <h4 className={p.title}>Sophia-Rose Nava</h4>
+                       <p className={p.text}>Merge in a post:</p>
+                  </div>
+                  <div className={`${p.postChat__body__item} ${p.chat__bound} ${isSpecialActive ? p.lastChat : ''}`} style={isActive ? customStyle : null}>
+                     {isHorisontal && <div className={p.lineHorizontalConnector}></div>}
+               <div className={p.item__imgWrapper}>
+                 <img src={Ava5} alt="ava" />
+               </div>
+               <div className={p.item__info}>
+                  <div className={p.item__info__date}>
+                    <img src={Like} alt="like" />
+                    <div className={p.info__date__likeWrapper}>
+                      <span className={p.numbers}>3</span>
+                      <span className={p.text}>likes</span>
+                    </div>
+                    <span className={p.info__date__date}>01-02-2020</span>
+                  </div>
+                  <div className={p.item__info__description}>
+                       <h4 className={p.title}>Sophia-Rose Nava</h4>
+                       <p className={p.text}>Instead of send updates via email, send them through the original
+                     conversation on Intercom Instead of send updates via email, send them through the origina</p>
+                  </div>
+                  <div className={p.item__info__functions}>
+                    <div className={p.info__functions__item}>
+                       <img src={Chat} alt="icon" />
+                       <span className={p.text}>Reply</span>
+                    </div>
+                    <div className={p.info__functions__item}>
+                       <img src={Delete} alt="icon" />
+                       <span className={p.text} onClick={hideChat}>Delete</span>
+                    </div>
+                    </div>
+               </div>
+            </div>
+               </div>
+               
+            </div>
                   {/* //item------------------------------------------------- */}
                    {/* //item------------------------------------------------- */}
                     {/* //item------------------------------------------------- */}

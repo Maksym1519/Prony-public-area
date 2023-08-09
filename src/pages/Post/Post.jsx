@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 import p from './post.module.scss';
 const HeaderLazy = React.lazy(() => import('../../components/Header'));
 const PostChatLazy = React.lazy(() => import('./PostChat'));
+const FooterLazy = React.lazy(() => import('../../components/Footer'));
 import Vouter1 from '../../images/vouters1.webp';
 import Vouter2 from '../../images/vouters2.webp';
 import Vouter3 from '../../images/vouters3.webp';
@@ -116,6 +117,9 @@ const Post = () => {
         <PostChatLazy />
          </Suspense>
          </div>
+         <Suspense fallback={<LoadingInfo />}>
+        <FooterLazy />
+         </Suspense>
         </div>
         </>
     )

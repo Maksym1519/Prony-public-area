@@ -1,0 +1,113 @@
+.changePassword__wrapper {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.changePassword__container {
+    width: 444px;
+    height: auto;
+    margin: 39px auto 87px;
+}
+.title {
+    color: var(--272557, #272557);
+    text-align: center;
+    font-family: 'Poppins-600';
+    font-size: 24px;
+    line-height: 38.8px; 
+    margin-bottom: 30px;
+}
+.changePassword__body {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 30px 0px rgba(202, 221, 255, 0.55);
+    padding: 27px 37px 32px 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+.input__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & label {
+    color: var(--272557, #272557);
+    font-family: 'Poppins-400';
+    font-size: 12px;
+    line-height: 21px; 
+    letter-spacing: 0.079px;
+    margin-bottom: 11px;
+    }
+    & .input {
+    width: 100%;
+    height: 44px;
+    border-radius: 7px;
+    border: 1px solid var(--e-5-ecf-9, #E5ECF9);
+    padding-left: 22px;
+    }
+    & .input__red {
+    border: 1px solid var(--style, #F43658);
+      }
+    & .input__red::placeholder {
+    color: #F43658
+    }
+    & .text__prediction {
+    color: var(--style, #F43658);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Poppins-400';
+    font-size: 10px;
+    line-height: 25.9px; 
+    letter-spacing: -0.219px;
+    margin-top: 5px;
+    }
+}
+.button__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+.cancel {
+    color: var(--colors-2-secondary, #1565C0);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Poppins-400';
+    font-size: 14px;
+    line-height: 38.8px; 
+    text-decoration-line: underline;
+}
+   .submit {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: var(--colors-2-secondary, #1565C0);
+    color: #FFF;
+    font-family: 'Nunito-600';
+    font-size: 14px;
+    line-height: 20.4px; 
+    letter-spacing: 0.06px;
+}
+.submit__wrapper {
+    position: relative;
+    width: 182px;
+    height: 41px;
+}
+.button__blur {
+    width: 160px;
+    height: 37px;
+    position: absolute;
+    left: 11px;
+    bottom: -7px;
+    border-radius: 50px;
+    opacity: 0.7;
+    background: var(--colors-2-secondary, #1565C0);
+    filter: blur(16.5px);
+   }

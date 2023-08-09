@@ -33,6 +33,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 43.5px;
 }
 .postChat__body__item {
     position: relative;
@@ -129,7 +130,7 @@
     }
 }
 .specialChat {
-    padding-left: 95px;
+    padding-left: 105px;
 }
 .lineConnector {
     position: absolute;
@@ -152,7 +153,7 @@
   .lineHorizontalConnector {
     position: absolute;
     background-color: #CDDAF2; // Цвет линии
-    width: 40px; // Ширина линии
+    width: 50px; // Ширина линии
     height: 1px; // Высота линии (пока вертикальная)
     left: 53px; // Горизонтально по центру блока
     top: 38px;
