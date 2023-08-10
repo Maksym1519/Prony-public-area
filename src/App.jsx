@@ -9,6 +9,13 @@ const PostLazy = React.lazy(() => import('./pages/Post/Post'));
 const ChangeLogLazy = React.lazy(() => import('./pages/ChangeLog/CnangeLog'));
 const ChangePasswordLazy = React.lazy(() => import('./pages/ChangePassword/ChangePassword'));
 const ProfileLazy = React.lazy(() => import('./pages/Profile/Profile'));
+const AvatarLazy = React.lazy(() => import('./pages/Avatar/Avatar'));
+const LoginLazy = React.lazy(() => import('./pages/Login/Login'));
+const RegistrationLazy = React.lazy(() => import('./pages/Login/Registration'));
+const ResetLazy = React.lazy(() => import('./pages/Login/Reset'));
+const NewPasswordLazy = React.lazy(() => import('./pages/Login/NewPassword'));
+const NotFoundLazy = React.lazy(() => import('./pages/404/NotFound'));
+const ErrorLazy = React.lazy(() => import('./pages/404/Error'));
 
 
 import "./fonts.scss";
@@ -25,6 +32,13 @@ const App = () => {
         <Link to="/ChangeLog">ChangeLog</Link>
         <Link to="/ChangePassword">ChangePassword</Link>
         <Link to="/Profile">Profile</Link>
+        <Link to="/Avatar">Avatar</Link>
+        <Link to="/Login">Login</Link>
+        <Link to="/Registration">Registration</Link>
+        <Link to="/Reset">Reset</Link>
+        <Link to="/NewPassword">NewPassword</Link>
+        <Link to="/NotFound">404</Link>
+        <Link to="/Error">500</Link>
          </nav>
       <Routes>
         <Route path="/" element={<React.Suspense><MainLazy /></React.Suspense>} />
@@ -33,6 +47,13 @@ const App = () => {
         <Route path="/ChangeLog" element={<React.Suspense><ChangeLogLazy /></React.Suspense>} />
         <Route path="/ChangePassword" element={<React.Suspense><ChangePasswordLazy /></React.Suspense>} />
         <Route path="/Profile" element={<React.Suspense><ProfileLazy /></React.Suspense>} />
+        <Route path="/Avatar" element={<React.Suspense><AvatarLazy /></React.Suspense>} />
+        <Route path="/Login" element={<React.Suspense><LoginLazy /></React.Suspense>} />
+        <Route path="/Registration" element={<React.Suspense><RegistrationLazy /></React.Suspense>} />
+        <Route path="/Reset" element={<React.Suspense><ResetLazy /></React.Suspense>} />
+        <Route path="/NewPassword" element={<React.Suspense><NewPasswordLazy /></React.Suspense>} />
+        <Route path="/NotFound" element={<React.Suspense><NotFoundLazy /></React.Suspense>} />
+        <Route path="/Error" element={<React.Suspense><ErrorLazy /></React.Suspense>} />
        </Routes>
     </>
   );

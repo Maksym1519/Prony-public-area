@@ -50,7 +50,7 @@ const Header = (props) => {
             </div>
             <div className={h.header__nav__item}>
               <img src={Icon3} alt="icon" />
-              <p className={h.header__nav__itemText} onClick={showLoggedHeader}>Log in</p>
+              <Link to='/Login'><p className={h.header__nav__itemText}>Log in</p></Link>
             </div>
           </div>
         </div>

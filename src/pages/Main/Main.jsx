@@ -32,7 +32,9 @@ const Main = () => {
    
       </div>
       <Suspense fallback={<LoadingInfo />}>
+        <Link to ='/NotFound'>
         <FooterLazy />
+</Link>
       </Suspense>
   </div>
 

@@ -37,7 +37,7 @@ const ChangePassword = () => {
              <Link to="#" onClick={() => window.history.back()}>
             <div className={pf.cancel}>Cancel</div>
             </Link>
-            <Link to="#" onClick={() => window.history.back()}>
+            <Link to="/">
             <div className={pf.submit__wrapper}>
             <button className={pf.submit}>Submit</button>
             <img src={Blur} alt="blur" className={pf.button__blur} />

@@ -52,10 +52,10 @@ const HeaderLogged = ({ show, hide, isLogged }) => {
                   <Link to="/">
                     <span className={hl.profile__menu__item}>Profile</span>
                   </Link>
-                  <Link to="/">
+                  <Link to="/Avatar">
                     <span className={hl.profile__menu__item}>Avatar</span>
                   </Link>
-                  <Link to="#" onClick={() => window.history.back()}>
+                  <Link to="/">
                     <span className={hl.profile__menu__item} onClick={hide}>
                       Logout
                     </span>
