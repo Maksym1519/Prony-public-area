@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { lazy, Suspense } from "react";
 import { Link, Route, Router, Routes } from "react-router-dom";
 import pf from "./profile.module.scss";
@@ -12,11 +12,15 @@ function LoadingInfo() {
     return <h2>Loading...</h2>;
   }
 const ChangePassword = () => {
+  const [isProfileMenu, setProfileMenu] = useState(null)
+  const hideProfileMenu = () => {
+    setProfileMenu(false)
+  }
   return (
     <>
       <div className={pf.changePassword__wrapper}>
         <Suspense fallback={<LoadingInfo />}>
-          <HeaderLoggedLazy />
+          <HeaderLoggedLazy action={hideProfileMenu}/>
         </Suspense>
         <div className={pf.changePassword__container}>
             <h2 className={pf.title}>Profile</h2>

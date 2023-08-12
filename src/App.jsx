@@ -16,6 +16,7 @@ const ResetLazy = React.lazy(() => import('./pages/Login/Reset'));
 const NewPasswordLazy = React.lazy(() => import('./pages/Login/NewPassword'));
 const NotFoundLazy = React.lazy(() => import('./pages/404/NotFound'));
 const ErrorLazy = React.lazy(() => import('./pages/404/Error'));
+const StateLazy = React.lazy(() => import('./components/State'));
 
 
 import "./fonts.scss";
@@ -25,7 +26,7 @@ const App = () => {
   
   return (
      <>
-      <nav>
+      {/* <nav>
         <Link to="/">Home</Link>
         <Link to="/Board-main">BoardMain</Link>
         <Link to="/Post">Post</Link>
@@ -39,7 +40,8 @@ const App = () => {
         <Link to="/NewPassword">NewPassword</Link>
         <Link to="/NotFound">404</Link>
         <Link to="/Error">500</Link>
-         </nav>
+        <Link to="/State">State</Link>
+         </nav> */}
       <Routes>
         <Route path="/" element={<React.Suspense><MainLazy /></React.Suspense>} />
         <Route path="/Board-main" element={<React.Suspense><BoardMainLazy /></React.Suspense>} />
@@ -54,6 +56,7 @@ const App = () => {
         <Route path="/NewPassword" element={<React.Suspense><NewPasswordLazy /></React.Suspense>} />
         <Route path="/NotFound" element={<React.Suspense><NotFoundLazy /></React.Suspense>} />
         <Route path="/Error" element={<React.Suspense><ErrorLazy /></React.Suspense>} />
+        <Route path="/State" element={<React.Suspense><StateLazy /></React.Suspense>} />
        </Routes>
     </>
   );

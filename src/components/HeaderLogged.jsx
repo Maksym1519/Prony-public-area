@@ -20,7 +20,7 @@ const HeaderLogged = ({ show, hide, isLogged }) => {
   };
   return (
     <>
-      <div className={hl.header__wrapper}>
+      <div className={hl.header__wrapper} >
         <div className={hl.header__container}>
           <Link to="/">
             <div className={hl.logo__wrapper}>
