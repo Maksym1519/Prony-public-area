@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { lazy, Suspense } from "react";
 import { Link, Route, Router, Routes } from "react-router-dom";
 import pf from "./profile.module.scss";
+import Ava from '../../images/ava1.webp';
 const HeaderLoggedLazy = React.lazy(() =>
   import("../../components/HeaderLogged")
 );
@@ -20,7 +21,7 @@ const ChangePassword = () => {
     <>
       <div className={pf.changePassword__wrapper}>
         <Suspense fallback={<LoadingInfo />}>
-          <HeaderLoggedLazy action={hideProfileMenu}/>
+          <HeaderLoggedLazy action={hideProfileMenu} img={Ava}/>
         </Suspense>
         <div className={pf.changePassword__container}>
             <h2 className={pf.title}>Profile</h2>

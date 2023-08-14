@@ -16,7 +16,7 @@ const ResetLazy = React.lazy(() => import('./pages/Login/Reset'));
 const NewPasswordLazy = React.lazy(() => import('./pages/Login/NewPassword'));
 const NotFoundLazy = React.lazy(() => import('./pages/404/NotFound'));
 const ErrorLazy = React.lazy(() => import('./pages/404/Error'));
-const StateLazy = React.lazy(() => import('./components/State'));
+
 
 
 import "./fonts.scss";
@@ -56,8 +56,7 @@ const App = () => {
         <Route path="/NewPassword" element={<React.Suspense><NewPasswordLazy /></React.Suspense>} />
         <Route path="/NotFound" element={<React.Suspense><NotFoundLazy /></React.Suspense>} />
         <Route path="/Error" element={<React.Suspense><ErrorLazy /></React.Suspense>} />
-        <Route path="/State" element={<React.Suspense><StateLazy /></React.Suspense>} />
-       </Routes>
+        </Routes>
     </>
   );
 };

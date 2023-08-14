@@ -1,6 +1,6 @@
 import hl from "./headerLogged.module.scss";
 import { lazy, Suspense } from "react";
-import { Link } from "react-router-dom";
+import { Link,BrowserRouter } from "react-router-dom";
 import Logo from "../images/header-logo.svg";
 import Icon1 from "../images/header-icon1.svg";
 import Icon2 from "../images/header-icon2.svg";
@@ -9,8 +9,9 @@ import Ava from "../images/ava1.webp";
 import Dots from "../images/header-dots.svg";
 import Bird from "../images/header-bird.svg";
 import { useState } from "react";
+import { proposalSyntaxPlugins } from "@babel/preset-env/lib/shipped-proposals";
 
-const HeaderLogged = ({ show, hide, isLogged }) => {
+const HeaderLogged = ({ show, hide, isLogged,name,img }) => {
   const [isProfile, setProfile] = useState(false);
   const showProfile = () => {
     setProfile(true);
@@ -20,6 +21,7 @@ const HeaderLogged = ({ show, hide, isLogged }) => {
   };
   return (
     <>
+    {/* <BrowserRouter>   */}
       <div className={hl.header__wrapper} >
         <div className={hl.header__container}>
           <Link to="/">
@@ -36,8 +38,8 @@ const HeaderLogged = ({ show, hide, isLogged }) => {
               <p className={hl.header__nav__itemText}>Changelog</p>
             </div>
             <div className={hl.header__profile}>
-              <img src={Ava} alt="ava" className={hl.ava} />
-              <p className={hl.name}>Lucy Lavender</p>
+              <img src={img} alt="ava" className={hl.ava} />
+              <p className={hl.name}>{name}</p>
 
               <div className={hl.menu__wrapper} onClick={showProfile}>
                 <img src={Dots} alt="icon" className={hl.menu} />
@@ -66,6 +68,7 @@ const HeaderLogged = ({ show, hide, isLogged }) => {
           </div>
         </div>
       </div>
+      {/* </BrowserRouter> */}
     </>
   );
 };

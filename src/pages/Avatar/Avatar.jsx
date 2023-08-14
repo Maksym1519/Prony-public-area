@@ -1,6 +1,7 @@
 import React from "react";
 import { lazy, Suspense } from "react";
 import { Link, Route, Router, Routes } from "react-router-dom";
+import Ava from '../../images/ava2.webp';
 import a from "./avatar.module.scss";
 const HeaderLoggedLazy = React.lazy(() =>
   import("../../components/HeaderLogged")
@@ -19,7 +20,7 @@ const Avatar = () => {
     <>
       <div className={a.avatar__wrapper}>
         <Suspense fallback={<LoadingInfo />}>
-          <HeaderLoggedLazy />
+          <HeaderLoggedLazy img={Ava}/>
         </Suspense>
         <div className={a.avatar__container}>
             <h2 className={a.title}>Avatar</h2>
@@ -50,7 +51,7 @@ const Avatar = () => {
             </div>
           </div>
         </div>
-        <Suspense fallback={<LoadingInfo />}>
+         <Suspense fallback={<LoadingInfo />}>
           <FooterLazy />
         </Suspense>
       </div>
